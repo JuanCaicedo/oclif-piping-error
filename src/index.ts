@@ -27,6 +27,7 @@ hello world from ./src/with-piping.ts!
 
     const name = flags.name || 'world'
     this.log(`hello ${name} from ${__filename}!`)
+    setTimeout(() => this.log(`DELAYED: hello ${name} from ${__filename}!`), 100)
 
     if (args.file && flags.force) {
       this.log(`you input --force and --file: ${args.file}`)
