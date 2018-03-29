@@ -1,17 +1,12 @@
-with-piping
-===========
+# oclif-piping-error
 
+## How to run
 
-
-[![Version](https://img.shields.io/npm/v/with-piping.svg)](https://npmjs.org/package/with-piping)
-[![CircleCI](https://circleci.com/gh/JuanCaicedo/with-piping/tree/master.svg?style=shield)](https://circleci.com/gh/JuanCaicedo/with-piping/tree/master)
-[![Appveyor CI](https://ci.appveyor.com/api/projects/status/github/JuanCaicedo/with-piping?branch=master&svg=true)](https://ci.appveyor.com/project/JuanCaicedo/with-piping/branch/master)
-[![Codecov](https://codecov.io/gh/JuanCaicedo/with-piping/branch/master/graph/badge.svg)](https://codecov.io/gh/JuanCaicedo/with-piping)
-[![Downloads/week](https://img.shields.io/npm/dw/with-piping.svg)](https://npmjs.org/package/with-piping)
-[![License](https://img.shields.io/npm/l/with-piping.svg)](https://github.com/JuanCaicedo/with-piping/blob/master/package.json)
-
-<!-- toc -->
-# Usage
-<!-- usage -->
-# Commands
-<!-- commands -->
+```bash
+$ npm install
+$ ./bin/run hello | head -n 1
+# hello world from /Users/juan/code/oclif/with-piping/src/index.ts!
+# Error: write EPIPE
+#     at _errnoException (util.js:1022:11)
+#     at WriteWrap.afterWrite (net.js:867:14)
+```
